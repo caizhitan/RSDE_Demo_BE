@@ -1,0 +1,13 @@
+{
+  "name": "@wotm/postman-loader",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.3",
+    "postman-to-openapi": "^3.0.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@wotm/rsde_dtt",
+  "version": "1.0.0",
+  "description": "rsde_dtt",
+  "main": "dev.ts",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx tsnd --respawn dev.ts",
+    "migrate-create": "npx sequelize-cli migration:create --name new-migration",
+    "migrate": "RSDE_DTT_SM_ENV_SECRET=dev/booking/space/be/env npx sequelize-cli db:migrate",
+    "migrate-undo": "npx sequelize-cli db:migrate:undo",
+    "migrate-undo-all": "npx sequelize-cli db:migrate:undo:all",
+    "seed-create": "npx sequelize-cli seed:generate --name new-seed",
+    "seed": "RSDE_DTT_SM_ENV_SECRET=dev/booking/space/be/env npx sequelize-cli db:seed:all",
+    "seed-undo": "npx sequelize-cli db:seed:undo",
+    "seed-undo-all": "npx sequelize-cli db:seed:undo:all",
+    "test": "IS_TESTING=true NODE_ENV=development BUILD=development npx jest --runInBand --silent=true",
+    "build": "tsc -b && copyfiles .sequelizerc ../../build/packages/rsde_dtt && copyfiles ./docs/result.yml ../../build/packages/rsde_dtt"
+  }
+}

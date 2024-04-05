@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2021",
+    "module": "commonjs",
+    "lib": ["es2021", "dom"],
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "typeRoots": ["node_modules/@types"],
+    "outDir": "./build",
+    "paths": {
+      "@wotm/authorization": ["packages/common/authorization/index.ts"],
+      "@wotm/authorization/*": ["packages/common/authorization/*"],
+      "@wotm/decorater": ["packages/common/decorater/index.ts"],
+      "@wotm/decorater/*": ["packages/common/decorater/*"],
+      "@wotm/env": ["packages/env/index.ts"],
+      "@wotm/env/*": ["packages/env/*"],
+      "@wotm/middleware": ["packages/middleware/index.ts"],
+      "@wotm/middleware/*": ["packages/middleware/*"],
+      "@wotm/postman-loader": ["packages/common/postman-loader/index.ts"],
+      "@wotm/postman-loader/*": ["packages/common/postman-loader/*"],
+      "@wotm/qrlib": ["packages/common/qrlib/index.ts"],
+      "@wotm/qrlib/*": ["packages/common/qrlib/*"],
+      "@wotm/secretmanager": ["packages/common/secret-manager/index.ts"],
+      "@wotm/secretmanager/*": ["packages/common/secret-manager/*"],
+      "@wotm/sentry": ["packages/common/sentry/index.ts"],
+      "@wotm/sentry/*": ["packages/common/sentry/*"],
+      "@wotm/starter": ["packages/starter/src/index.ts"],
+      "@wotm/utils": ["packages/common/utils/index.ts"],
+      "@wotm/utils/*": ["packages/common/utils/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp",
+    "./build/**/*",
+    "packages/**/tests/*",
+    "packages/**/coverage/*",
+    "packages/**/node_modules"
+  ]
+}

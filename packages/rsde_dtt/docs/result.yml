@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: rsde_dtt
+  description: >-
+    Documentation for rsde_dtt API endpoints.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8006
+    description: Local server
+  - url: https://digiwork-lta-dev.net/rsde_dtt
+    description: Sandbox environment server
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+    oauth2Auth:
+      type: http
+      scheme: oauth2
+security:
+  - oauth2Auth: []
+tags:
+  - name: users
+paths:
+  /me:
+    get:
+      tags:
+        - users
+      summary: getUser
+      responses:
+        "200":
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Access-Control-Allow-Origin:
+              schema:
+                type: string
+                example: "*"
+            Access-Control-Allow-Credentials:
+              schema:
+                type: boolean
+                example: "true"
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: "219"
+            ETag:
+              schema:
+                type: string
+                example: W/"db-GLsI5bVKXrvhtytXfPmxXp+ZZYA"
+            Date:
+              schema:
+                type: string
+                example: Sun, 25 Sep 2022 15:53:05 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                success: true
+                data:
+                  uuid: 3b7bf1f2-d625-40b9-877f-57f08a6dbb56
+                  email: testDummy@shenxj08outlook.onmicrosoft.com
+                  status: ACTIVE
+                  createdAt: "2022-09-25T09:18:41.600Z"
+                  updatedAt: "2022-09-25T09:18:41.600Z"

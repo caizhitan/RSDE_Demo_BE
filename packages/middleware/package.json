@@ -1,0 +1,10 @@
+{
+  "name": "@wotm/middleware",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rimraf lib coverage tsconfig.tsbuildinfo"
+  }
+}

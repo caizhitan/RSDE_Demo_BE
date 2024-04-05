@@ -1,0 +1,11 @@
+{
+  "development": {
+    "AvailabilityAPIS": {
+      "createAvailabilityRecord": ["admin"],
+      "deleteAvailabilityRecord": ["admin"],
+      "updateAvailabilityRecord": ["admin"],
+      "getAllAvailableSlotsByDates": ["admin"],
+      "getAllAvailableSlots": ["admin"]
+    }
+  }
+}

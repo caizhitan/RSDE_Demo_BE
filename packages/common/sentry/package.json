@@ -1,0 +1,13 @@
+{
+  "name": "@wotm/sentry",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "@sentry/node": "^7.45.0",
+    "@sentry/tracing": "^7.45.0"
+  }
+}
