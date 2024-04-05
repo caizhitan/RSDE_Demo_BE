@@ -23,7 +23,11 @@
 
 ### General User Features:
 - Users are able view and download files uploaded by the admin, paginated response of avaliable files is handled by the backend.
-- Users are able to search and filter files by file type and file name. 
+- Users are able to search and filter files by file type and file name.
+
+### Sercurity
+- To open a file, the frontend does a request to the backend and through AWS's api the file will be transfered from the server back to the user
+- Prevents api key from being exposed.
 
 ## Structure of this monorepo
 
