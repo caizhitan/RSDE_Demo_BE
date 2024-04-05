@@ -2,6 +2,7 @@
 
 ###  System Architecture
 <img width="1468" alt="image" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/b6d1467d-3f3c-4f01-9da1-984e13bce45a">
+
 - Using an express js as part of the node ecosystem to handle backend requests
 - Using postgreSQL to store structured data
 - Using S3 bucket in AWS to store meta data (PDF and EXCEL files)
