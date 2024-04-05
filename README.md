@@ -3,16 +3,18 @@
 ###  System Architecture
 <img width="1468" alt="image" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/b6d1467d-3f3c-4f01-9da1-984e13bce45a">
 - Using an express js as part of the node ecosystem to handle backend requests
-- Using postgreSQL to store structured data and S3 bucket in AWS to handle meta data.
+
+- Using postgreSQL to store structured data
+
+- Using S3 bucket in AWS to store meta data (PDF and EXCEL files)
+
+- With Sequalize an Object-Relational Mapping (ORM) library to manage our Back-End databases PostgreSQL. 
 
 ###  System Flow
 <img width="1388" alt="image-1" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/286f7277-5a6c-48fe-88ea-cba168da4a1f">
 
-
 ### File Class Diagram
 <img width="570" alt="image-2" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/edd70f26-7e98-483b-b6e5-7cd6af9b39bb">
-
-Our Front-End is built using TypeScript & React. With Sequalize an Object-Relational Mapping (ORM) library to manage our Back-End databases PostgreSQL. 
 
 ## Functionality
 
