@@ -12,6 +12,7 @@
 <img width="570" alt="image-2" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/edd70f26-7e98-483b-b6e5-7cd6af9b39bb">
 
 - RSDE_BE uses typescript, by assigning every value a type, it is much easier to track variables in the system
+- Using MVCS architecture for the structure of the backend
 
 ## Functionality
 
