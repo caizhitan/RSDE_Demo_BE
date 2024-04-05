@@ -37,35 +37,7 @@ The data model is verioned and seeded with the use of sequelize cli: https://seq
 
 To loosely couple the project with clear funcationality, the idea can be referred from https://www.codementor.io/@evanbechtol/node-service-oriented-architecture-12vjt9zs9i and https://bytearcher.com/articles/node-project-structure/
 
-## To run sequelize cli migration
+## AWS EC2 and PM2 Logs Demo
 
-Manual create schema in the target DB server, and set DB user as the owner of the newly created schema
-
-## Docker Run Commands
-
-Connect to local database
-
-- cd RSDE_DTT
-- Change .env BUILD=dev-sandbox to BUILD=development
-- docker-compose up --build
-
-Docker connect to AWS RDS Dev instance
-
-- Change .env BUILD=development to BUILD=dev-sandbox
-- docker-compose up --build
-
-Push Image to ECR
-Login to ECR (Make sure Aws configured in cli)
-
-aws ecr get-login-password --region region | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.region.amazonaws.com
-
-Tag the image
-
-docker tag <ImageID> <ECR image url>:tag
-
-push to ECR
-
-docker push <ECR image url>:tag
-
-Refresh the ecr ashboard and can find the latest image
+[![Watch the video](https://github.com/caizhitan/RSDE_Demo_BE/assets/150103035/4e4fa51a-6e5c-4f84-b504-8a33d92426f4)](https://www.youtube.com/watch?v=LcoNZ7wDtE0)
 
