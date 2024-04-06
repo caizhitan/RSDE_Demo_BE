@@ -3,7 +3,7 @@
 ###  System Architecture
 <img width="1468" alt="image" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/b6d1467d-3f3c-4f01-9da1-984e13bce45a">
 
-- Using an express js as part of the node ecosystem to handle backend requests
+- Using an ExpressJS as part of the node ecosystem to handle backend requests
 - Using postgreSQL to store structured data
 - Using S3 bucket in AWS to store meta data (PDF and EXCEL files)
 - With Sequalize an Object-Relational Mapping (ORM) library to manage our Back-End databases PostgreSQL. 
@@ -11,14 +11,14 @@
 ### File Class Diagram
 <img width="570" alt="image-2" src="https://github.com/caizhitan/RSDE_FE_Demo/assets/150103035/edd70f26-7e98-483b-b6e5-7cd6af9b39bb">
 
-- RSDE_BE uses typescript, by assigning every value a type, it is much easier to track variables in the system
+- RSDE_BE uses Typescript for Type Safety, this allows for a more robust backend and for maintainance to track variables in the system
 - Using MVCS architecture for the structure of the backend
 
 ## Functionality
 
 ### Authentication:
 - Users can securely log in using MSAL ([Microsoft Authentication Library](https://learn.microsoft.com/en-us/entra/identity-platform/msal-overview)).
-- Backend handles the login request from MSAL and authenticate user
+- Backend handles the login request from MSAL and Authenticates the user
   
 ### Admin Features:
 - Admins have the route access to upload files. These files become available for all users to view and download, facilitating easy sharing and access to resources outside of the government internet.
@@ -44,7 +44,7 @@ The data model is verioned and seeded with the use of sequelize cli: https://seq
 
 To loosely couple the project with clear funcationality, the idea can be referred from https://www.codementor.io/@evanbechtol/node-service-oriented-architecture-12vjt9zs9i and https://bytearcher.com/articles/node-project-structure/
 
-## AWS EC2 and PM2 Logs Demo
+## AWS EC2 and PM2 Logging Demo
 
 [![Watch the video](https://github.com/caizhitan/RSDE_Demo_BE/assets/150103035/4e4fa51a-6e5c-4f84-b504-8a33d92426f4)](https://www.youtube.com/watch?v=LcoNZ7wDtE0)
 
